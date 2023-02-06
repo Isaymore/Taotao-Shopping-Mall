@@ -13,6 +13,13 @@ module.exports = {
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    "@typescript-eslint/no-inferrable-types": "off",
+    "vue/multi-word-component-names":[
+      'error',
+      {
+        ignores:['index'] // 忽略的组件名
+      }
+    ]
   }
 }
